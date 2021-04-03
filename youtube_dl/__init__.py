@@ -378,6 +378,7 @@ def _real_main(argv=None):
         'listsubtitles': opts.listsubtitles,
         'subtitlesformat': opts.subtitlesformat,
         'subtitleslangs': opts.subtitleslangs,
+        'adnsubtoken' : opts.adnsubtoken,
         'matchtitle': decodeOption(opts.matchtitle),
         'rejecttitle': decodeOption(opts.rejecttitle),
         'max_downloads': opts.max_downloads,
