@@ -2966,6 +2966,11 @@ class InfoExtractor(object):
     def _get_subtitles(self, *args, **kwargs):
         raise NotImplementedError('This method must be implemented by subclasses')
 
+    def get_sub_token_adn(self):
+        if (self._downloader.params.get('adnsubtoken', False)):
+            return self._downloader.params.get('adnsubtoken')
+        return 'ab9f52f5baae7c72'
+
     @staticmethod
     def _merge_subtitle_items(subtitle_list1, subtitle_list2):
         """ Merge subtitle items for one language. Items with duplicated URLs

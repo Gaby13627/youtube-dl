@@ -450,7 +450,7 @@ def parseOpts(overrideArguments=None):
         help='Languages of the subtitles to download (optional) separated by commas, use --list-subs for available language tags')
     subtitles.add_option(
         '--adn-sub-token', '--ast',
-        action='store', dest='adnsubtoken',type='string' default='ab9f52f5baae7c72',
+        action='store', dest='adnsubtoken',type='string', default='ab9f52f5baae7c72',
         help='Token to retrieve subtitles from the ADN site')
 
     downloader = optparse.OptionGroup(parser, 'Download Options')
